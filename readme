@@ -1,0 +1,30 @@
+"latency_model_2010_2013"
+
+This project implements the paper "An analytical approach for NoC performance Analysis" by
+Umit Y. Orgas, Radu Marculecu et. al published in IEEE/TCAD in december 2010 for the contention modeling 
+
+and 
+
+A.  E.  Kiasari,  Z.  Lu,  and  A.  Jantsch,  “An  analytical  latency  model  fornetworks-on-chip”,IEEE Transactions on Very Large Scale Integration (VLSI)Systems, vol. 21, pp. 113–123, 1 Jan. 2013 for the congestion modeling
+
+
+This is an analytical model for latency prediction in NoCs
+
+
+Compilation:
+In general, programs which use Armadillo are compiled along these lines:
+  g++ example1.cpp -o example1 -O2 -larmadillo
+
+(you may also need to specify the include directory via the -I switch)
+
+If you get linking errors, or if Armadillo was installed manually
+and you specified that LAPACK and BLAS are available, you will
+need to explicitly link with LAPACK and BLAS (or their equivalents),
+for example:
+  g++ example1.cpp -o example1 -O2 -llapack -lblas
+
+(you may also need to specify the library directory via the -L switch)
+
+If you have specified that ARPACK (or its equivalent) is available,
+add -larpack to the compiler command line.  For example:
+  g++ example1.cpp -o example1 -O2 -llapack -lblas -larpack

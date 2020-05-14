@@ -1,0 +1,9 @@
+number of rows# 	4
+number of cols# 	4
+mapping file# 		files/16_vopd_out_out.txt
+traffic file# 		files/traffic_vopd.txt
+routing delay# 		4
+link delay# 		1
+Packet Size# 		16
+Buffer Size#		10
+print features# 	0
